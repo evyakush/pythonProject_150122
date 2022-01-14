@@ -20,3 +20,4 @@ def simple_func():
 
 simple_func()
 print(simple_func)
+print('Проверка')

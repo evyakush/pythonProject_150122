@@ -18,10 +18,16 @@ def big_func(func):
 def simple_func():
     print('It,s simple func')
 
+
+
+
 simple_func()
-print(simple_func)
-print('Проверка')
-print('Проверка 2')
-print('Проверка3')
-print("Проверка4")
-print("Проверка 5 с работы")
+
+
+if __name__ == '__main__':
+    print(simple_func)
+    print('Проверка')
+    print('Проверка 2')
+    print('Проверка3')
+    print("Проверка4")
+    print("Проверка 5 с работы")

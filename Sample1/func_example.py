@@ -22,6 +22,7 @@ def simple_func():
 
 
 simple_func()
+a = 2
 
 
 if __name__ == '__main__':
@@ -31,3 +32,5 @@ if __name__ == '__main__':
     print('Проверка3')
     print("Проверка4")
     print("Проверка 5 с работы")
+    text = input("Введите ваш текст")
+    print(f'Ввы ввели текст {text}')

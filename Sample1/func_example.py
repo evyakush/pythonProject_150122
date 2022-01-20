@@ -24,6 +24,11 @@ def simple_func():
 simple_func()
 a = 2 #Добавлено просто, чтобы внести изменения в код.
 
+aa = [x for x in range(0, 2)]
+# print(aa)
+w = [[x for x in (x, x+1)] for x in range(0, 4)]
+print(w)
+
 
 if __name__ == '__main__':
     print(simple_func)
@@ -32,5 +37,5 @@ if __name__ == '__main__':
     print('Проверка3')
     print("Проверка4")
     print("Проверка 5 с работы")
-    text = input("Введите ваш текст")
-    print(f'Ввы ввели текст {text}')
+    # text = input("Введите ваш текст")
+    # print(f'Ввы ввели текст {text}')

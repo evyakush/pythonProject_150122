@@ -28,9 +28,18 @@ aa = [x for x in range(0, 2)]
 # print(aa)
 w = [[x for x in (x, x, x)] for x in range(0, 4)]
 print(w)
-ex_list = list(range(0,3))
+ex_list = list(range(0, 3))
 print(ex_list)
 ww = [[list(range(x, x+3))] for x in range(3)]
+a_data = 'ddddddddddaaaaaaasdasdasd'
+a_dict = {e: b for e, b in enumerate(a_data)}
+a_gen = (a**2 for a in range(1, 100) if a % 2 == 0)
+print(a_gen)
+
+for i in a_gen:
+    print(i)
+
+
 
 print(ww)
 
@@ -44,3 +53,6 @@ if __name__ == '__main__':
     print("Проверка 5 с работы")
     # text = input("Введите ваш текст")
     # print(f'Ввы ввели текст {text}')
+    print(f'Это то что нужно {a_dict}')
+    print(type(a_dict))
+    print({a: e for a, e in a_dict.items()})

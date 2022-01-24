@@ -43,6 +43,8 @@ for i in a_gen:
 
 print(ww)
 
+
+
 if __name__ == '__main__':
     print(simple_func)
     print('Проверка')

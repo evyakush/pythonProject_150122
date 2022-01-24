@@ -42,6 +42,17 @@ for i in a_gen:
 
 
 print(ww)
+ab = 'abcdefijk'
+ab_dict = {a : b for a, b in enumerate(ab)}
+print(ab_dict)
+print(type(ab_dict))
+a_triple = [a**3 for a in range(0, 11) if a % 2 == 0]
+print(a_triple)
+a_quad = (a**3 for a in range(0, 11) if a % 2 == 0)
+print()
+print(a_quad)
+for i in a_quad:
+    print(i)
 
 
 

@@ -53,6 +53,25 @@ print()
 print(a_quad)
 for i in a_quad:
     print(i)
+# a_bool = 100/False
+# print(f'(Техе divide {a_bool}')
+
+def check_f(a):
+    print(f'a is {bool(a)}')
+    return a > 0
+
+check_f(1)
+check_f(-1)
+check_f(0)
+print()
+b = check_f(1)
+c = check_f(-1)
+d = check_f(0)
+print(b)
+print(c)
+print(d)
+
+
 
 
 

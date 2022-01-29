@@ -59,6 +59,9 @@ for i in a_quad:
 def check_f(a):
     print(f'a is {bool(a)}')
     return a > 0
+def arg_print(*args):
+    print(args)
+
 
 check_f(1)
 check_f(-1)
@@ -70,6 +73,7 @@ d = check_f(0)
 print(b)
 print(c)
 print(d)
+arg_print('ghbvth', 'Пример работы')
 
 
 

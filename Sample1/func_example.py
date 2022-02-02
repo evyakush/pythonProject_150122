@@ -3,11 +3,14 @@
 
 def big_func(func):
     print('From big func')
-    def wrop_func():
-        print('befor wrop func')
+
+    def wrap_func():
+        print('before wrap func')
         func()
-        print('after wrop')
-    return wrop_func
+        print('after wrap')
+
+    return wrap_func
+
 
 # simple_func()
 #
@@ -19,10 +22,10 @@ def simple_func():
     print('It,s simple func')
 
 
-
-
 simple_func()
-a = 2 #Добавлено просто, чтобы внести изменения в код.
+a = 2
+
+# Добавлено просто, чтобы внести изменения в код.
 
 aa = [x for x in range(0, 2)]
 # print(aa)
@@ -30,35 +33,37 @@ w = [[x for x in (x, x, x)] for x in range(0, 4)]
 print(w)
 ex_list = list(range(0, 3))
 print(ex_list)
-ww = [[list(range(x, x+3))] for x in range(3)]
+ww = [[list(range(x, x + 3))] for x in range(3)]
 a_data = 'ddddddddddaaaaaaasdasdasd'
 a_dict = {e: b for e, b in enumerate(a_data)}
-a_gen = (a**2 for a in range(1, 100) if a % 2 == 0)
+a_gen = (a ** 2 for a in range(1, 100) if a % 2 == 0)
 print(a_gen)
 
 for i in a_gen:
     print(i)
 
-
-
 print(ww)
 ab = 'abcdefijk'
-ab_dict = {a : b for a, b in enumerate(ab)}
+ab_dict = {a: b for a, b in enumerate(ab)}
 print(ab_dict)
 print(type(ab_dict))
-a_triple = [a**3 for a in range(0, 11) if a % 2 == 0]
+a_triple = [a ** 3 for a in range(0, 11) if a % 2 == 0]
 print(a_triple)
-a_quad = (a**3 for a in range(0, 11) if a % 2 == 0)
+a_quad = (a ** 3 for a in range(0, 11) if a % 2 == 0)
 print()
 print(a_quad)
 for i in a_quad:
     print(i)
+
+
 # a_bool = 100/False
 # print(f'(Техе divide {a_bool}')
 
 def check_f(a):
     print(f'a is {bool(a)}')
     return a > 0
+
+
 def arg_print(*args):
     print(args)
 
@@ -74,10 +79,6 @@ print(b)
 print(c)
 print(d)
 arg_print('ghbvth', 'Пример работы')
-
-
-
-
 
 if __name__ == '__main__':
     print(simple_func)

@@ -1,19 +1,8 @@
 
-# def strength_pass(value):
-#     if len(value) < 8:
-#         print('from function')
-#         return "weak pass"
-#     return 'Print'
-
-def divide_num(a, b):
-    try:
-        aa = a/b
-        return aa
-    except ZeroDivisionError:
-        # print("Деление на ноль")
-        return 'Divide by zero'
+def password_strength(passwd: str) -> str:
+    print('From func')
 
 
 if __name__ == '__main__':
-    # assert strength_pass(' ')
-    print(divide_num(1, 0))
+    assert password_strength('') == 'Too weak'
+    assert password_strength(123567) == 'Too weak'
